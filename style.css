@@ -1,0 +1,314 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 95%;
+    width: 99%;
+    align-items: center;
+    background-color: rgb(243, 232, 213);
+    background-color: wheat;
+    font-family: Cuanky;
+}
+
+@font-face {
+    font-family: Cuanky;
+    src: url(assets/fonts/Cuanky.ttf);
+}
+
+@font-face {
+    font-family: honey;
+    src: url(assets/fonts/Honey\ Bear.ttf);
+}
+
+/* Enhanced nav */
+nav {
+        margin-top: 20px;
+        font-family: Cuanky;
+        margin-right: 50%;
+        margin-left: 2%;
+        padding: 10px 45px;
+        background-color: #193366;
+        border-radius: 15px; 
+        display: flex; 
+        flex-wrap: wrap; /* Allow wrapping for small screens */
+        gap: 30px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        min-width: fit-content; /* Ensure all content is visible */
+}
+
+nav:hover {
+    transform: scale(1.05);
+}
+
+nav a {
+    color: wheat;
+    font-size: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: rgb(198, 158, 158); 
+    transform: scale(1.1);
+}
+
+/* Header enhancements */
+header { 
+    font-family: honey;
+    color: black;
+    background-color: rgba(248, 248, 248, 0.584);
+    margin-left: 2%;
+    margin-top: 25px;
+    background-image: url(assets/images/avatar1.svg);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 270px;
+    padding-right: 50px;
+    padding: 5px 0px; 
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.h1Home {
+    font-size: 50px;
+    margin-left: 10%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h3 {
+    font-size: 40px;
+    margin-left: 5%;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Footer enhancements */
+footer {
+    margin-left: 40%;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+    background-color: orange;
+    padding-left: 5%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+footer:hover { 
+    background-color: rgb(158, 136, 96);
+}
+
+.symbol {
+    height: 30px;
+    gap: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.symbol:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+} 
+
+.firstP-Pmain {
+    color: rgb(113, 104, 104);
+    margin-left: 10%;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+.secondP-Pmain {
+    color: rgb(113, 104, 104);
+    margin-left: 10%;
+    font-size: 35px;
+}
+
+.projectsH1 {
+    font-family: honey;
+    animation: fadeIn 2s ease-in-out;
+    margin-left: 5%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.row > div {
+    width: 400px;
+    min-width: 300px; 
+    flex: 0 0 auto; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row > div > span {
+    font-family: honey;
+    font-size: 12px;
+    color: black;
+}
+
+.npmDiv {
+    font-family: honey;
+    font-size: 12px;
+    margin-top: 25px;
+    margin-left: 5%;
+    width: 300px;
+    
+}
+
+/* Image styles */
+.prntScrn {
+    width: 100%;
+    height: auto;
+    max-width: 450px; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0.4, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prntScrn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0.4, 0.4); 
+    cursor: pointer;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: wheat;
+    padding: 20px;
+    border: 5px solid;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.popup > h2 {
+    font-family: honey;
+    font-size: 15px;
+}
+
+.popup > a {
+    font-size: 20px;
+    color: black;
+    background-color: white;
+ border: 0.5px solid;
+ border-radius: 5px;
+ padding: 5px;
+ margin-bottom: 8px;
+}
+
+.popup button {
+    margin: 5px; 
+    font-family: Cuanky;
+    font-size: 20px;
+    padding: 5px;
+    background-color: white;
+    border: 0.5px solid;
+    border-radius: 5px;
+}
+
+.popup button:hover, .popup a:hover {
+    cursor: pointer;
+    background-color: rgb(237, 216, 140);  
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1200px) {
+    .row {
+        justify-content: center;
+    }
+    /* 2 cards per row */
+    .row > div {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1 card per row */
+    .row {
+        justify-content: center;
+    }
+    
+    nav {
+        margin-right: 2%; /* Full width nav on mobile */
+        justify-content: center;
+    }
+    
+    nav a {
+        font-size: 20px; /* Slightly smaller font for mobile */
+    }
+}
+
+.h1About {
+    font-family: honey;
+    font-size: 50px;
+    margin-left: 8%;
+} 
+
+.aboutPar {
+    margin-top: 15px;
+    margin-left: 5%;
+    color: black;
+    padding: 30px 30px;
+    background-color: rgba(255, 255, 255, 0.881);
+    background-image: url(assets/images/avatar2.svg);
+    background-position: 97%;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    font-size: 22px;
+    line-height: 1.8;
+    border-radius: 15px;
+    margin-bottom: 55px;
+}
+
+.aboutPar:hover {
+    filter: brightness(1.2);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.h1About {
+    color: white;
+    margin-top: 15px;
+    margin-left: 5%;
+    font-size: 55px;
+}
+
