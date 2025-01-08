@@ -162,7 +162,7 @@ footer:hover {
 }
 
 .row > div {
-    width: 400px;
+    width: 350px;
     min-width: 300px; 
     flex: 0 0 auto; 
     text-align: center;
