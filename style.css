@@ -267,6 +267,14 @@ footer:hover {
     .row {
         justify-content: center;
     }
+
+    .row > div{
+        width: 250px;
+    }
+
+    .row > div > span {
+        margin: 2px;
+    }
     
     nav {
         margin-right: 2%; /* Full width nav on mobile */
@@ -274,8 +282,28 @@ footer:hover {
     }
     
     nav a {
-        font-size: 22px; /* Slightly smaller font for mobile */
+        font-size: 23px; /* Slightly smaller font for mobile */
     }
+
+.h1Home {
+    font-size: 40px;
+}
+
+.h3Home {
+    font-size: 30px;
+}
+
+.firstP-Pmain {
+    font-size: 30px;
+}
+
+.secondP-Pmain {
+    font-size: 25px;
+}
+
+.aboutPar {
+    font-size: 20px;
+}
 }
 
 .h1About {
